@@ -13,9 +13,13 @@ public enum CardRank {
     QUEEN(12),
     KING(13);
 
-    int power;
+    private int power;
 
     CardRank(int power) {
         this.power = power;
+    }
+
+    public int getPower() {
+        return power;
     }
 }

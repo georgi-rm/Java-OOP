@@ -9,6 +9,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return String.format("Card name: %s of %s; Card power: %d", cardRank.name(), cardSuit.name(), cardSuit.power + cardRank.power);
+        return String.format("Card name: %s of %s; Card power: %d", cardRank.name(), cardSuit.name(), cardSuit.getPower() + cardRank.getPower());
     }
 }

@@ -4,9 +4,13 @@ public enum CardSuit {
     HEARTS(26),
     SPADES(39);
 
-    int power;
+    private int power;
 
     CardSuit(int power) {
         this.power = power;
+    }
+
+    public int getPower() {
+        return power;
     }
 }
