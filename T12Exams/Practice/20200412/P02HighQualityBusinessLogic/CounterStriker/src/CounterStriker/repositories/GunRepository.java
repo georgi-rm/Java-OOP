@@ -8,7 +8,7 @@ import java.util.Collection;
 
 public class GunRepository implements Repository<Gun>{
 
-    Collection<Gun> models;
+    private Collection<Gun> models;
 
     public GunRepository() {
         this.models = new ArrayList<>();

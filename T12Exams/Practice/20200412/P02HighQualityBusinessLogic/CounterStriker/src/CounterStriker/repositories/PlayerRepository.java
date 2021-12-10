@@ -8,7 +8,7 @@ import java.util.Collection;
 
 public class PlayerRepository implements Repository<Player> {
 
-    Collection<Player> models;
+    private Collection<Player> models;
 
     public PlayerRepository() {
         this.models = new ArrayList<>();
