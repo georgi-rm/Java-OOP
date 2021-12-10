@@ -76,16 +76,16 @@ public class ControllerImpl implements Controller {
     @Override
     public String report() {
 
-//        Comparator<Player> compareByType = Comparator.comparing( Player::toString );
-        Comparator<Player> compareByType = (e1, e2) -> {
-                if(e1 instanceof CounterTerrorist) {
-                    return -1;
-                } else if ( e2 instanceof CounterTerrorist)  {
-                    return 1;
-                } else {
-                    return 0;
-                }
-        };
+        Comparator<Player> compareByType = Comparator.comparing( Player::toString );
+//        Comparator<Player> compareByType = (e1, e2) -> {
+//                if(e1 instanceof CounterTerrorist) {
+//                    return -1;
+//                } else if ( e2 instanceof CounterTerrorist)  {
+//                    return 1;
+//                } else {
+//                    return 0;
+//                }
+//        };
 
         Comparator<Player> compareByHealth = Comparator.comparing( Player::getHealth ).reversed();
 
